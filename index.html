@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="mt-5 ml-auto mr-auto mb-auto">
+      <h1 class="text-center text">CALCULATOR</h1>
+    </div>
+<div class="container  mt-5 ">
+    <div class="row">
+        <div class="col-sm-12 tbl">
+    <table class="table table-xl-responsive ">
+      <tbody>
+        <tr>
+          <th colspan="5"><input type="text" id="input_num" class="ip"/></th>
+        </tr>
+        <tr >
+            <th><button type="button" class="btn btn-lg hvr" onclick="getvalue('7')">7</button></th>
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('8')">8</button></th>
+            
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('9')">9</button></th>
+
+            <th><button type="button" class="btn btn-info btn-lg"onclick="getvalue('/')">/</button></th>
+            <th rowspan="4"><button type="button" class="btn btn-info btn-lg del" onclick="clearInput()">Del</button></th>
+
+          </tr>
+          <tr>
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('4')">4</button></th>
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('5')">5</button></th>
+            
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('6')">6</button></th>
+
+            <th><button type="button" class="btn btn-info btn-lg"onclick="getvalue('*')">X</button></th>
+            
+
+          </tr>
+          <tr>
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('1')">1</button></th>
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('2')">2</button></th>
+            
+            <th><button type="button" class="btn hvr btn-lg"onclick="getvalue('3')">3</button></th>
+
+            <th><button type="button" class="btn btn-info btn-lg"onclick="getvalue('-')">-</button></th>
+
+          </tr>
+          <tr>
+            <td ><button type="button" class="btn hvr btn-lg"onclick="getvalue('.')">.</button></td>
+           
+            <td><button type="button" class="btn hvr btn-lg"onclick="getvalue('0')">0</button></td>
+
+            <td ><button type="button" class="btn btn-info btn-lg  "onclick="elvaluate()">=</button></td>
+            <th><button type="button" class="btn btn-info btn-lg"onclick="getvalue('+')">+</button></th>
+
+
+          </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src="app.js"></script>
+</html>
